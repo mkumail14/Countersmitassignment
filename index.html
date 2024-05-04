@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="display: flex; align-items: center; justify-content: center;">
+   
+        <!-- <button onclick="colorchange('red')" style="background-color: red;">Click</button>
+        <button onclick="colorchange('blue')" style="background-color: blue;">Click</button>
+        <button onclick="colorchange('green')" style="background-color: green;">Click</button>
+        <button onclick="colorchange('yellow')" style="background-color: yellow;">Click</button> -->
+
+<div class="container">
+    <center>
+    <h1>Counter App</h1>
+    <div style="font-weight: bolder; font-size: 100px;" id="output"></div>
+    <div class="buttonbox"></div>
+        <button  style="font-weight: bolder; font-size: 30px; padding: 10px;" onclick="increment()">+</button>
+        <button  style="font-weight: bolder; font-size: 30px; padding: 10px;" onclick="decrement()">-</button>
+    </div>
+</center>
+    <script>
+        function colorchange(color){
+            document.querySelector('body').style.backgroundColor = color;
+        }
+
+var value=0;
+        function increment(){
+            value++;
+        }
+        function decrement(){
+            value--;
+        }
+setInterval(function(){
+document.getElementById('output').innerHTML=value;
+},1)
+
+
+    </script>
+</body>
+</html>
